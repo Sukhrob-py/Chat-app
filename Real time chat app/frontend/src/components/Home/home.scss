@@ -1,0 +1,87 @@
+.home{
+  height: calc(100vh - 60px);
+  background-color: aqua;
+  display: flex;
+  .rooms{
+    width: 300px;
+    background-color: antiquewhite;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &::-webkit-scrollbar{
+      width: 0;
+    }
+    .room{
+      background-color: aquamarine;
+      padding: 15px;
+      cursor: pointer;
+      &__name{
+        text-transform: capitalize;
+      }
+    }
+  }
+  .messages-board{
+    width: calc(100vw - 300px);
+    padding: 15px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    gap: 6px;
+    .left{
+      display: flex;
+      justify-content: flex-start;
+      .msg{
+        background-color: blueviolet;
+        padding: 10px;
+        color: #fff;
+        border-radius: 10px 10px 10px 0;
+        font-size: 17px;
+        .name{
+          font-size: 14px;
+          color: rgb(9, 9, 70);
+        }
+      }
+    }
+    .right{
+      display: flex;
+      justify-content: end;
+      .msg{
+        padding: 10px;
+        background-color: cadetblue;
+        border-radius: 10px 10px 0 10px;
+        color: blue;
+        font-size: 17px;
+      }
+    }
+    .form{
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      bottom: 10px;
+      left: 0;
+      input,button{
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.add{
+  display: flex;
+  flex-direction: column;
+
+  input,button{
+    padding: 5px;
+    outline: none;
+    border: 1px solid #333;
+  }
+  button{
+    background-color: blue;
+    cursor: pointer;
+    color: #fff;
+  }
+}

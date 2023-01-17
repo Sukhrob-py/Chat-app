@@ -1,0 +1,25 @@
+.auth{
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: rgb(19, 19, 19);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    input,button{
+      border: 1px solid lightblue;
+      padding: 10px;
+      outline: lightgreen;
+      border-radius: 6px;
+    }
+    button{
+      background-color: rgb(73, 42, 109);
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
